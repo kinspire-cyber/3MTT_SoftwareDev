@@ -1,0 +1,51 @@
+:root {
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--shadow-color);
+    overflow: hidden;
+}
+
+.display {
+    background: #222;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 20px;
+}
+
+.buttons {
+    display: grid;
+    /* Creates a 4-column layout where each column takes up an equal fraction of the available space */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+ .buttons button {
+    font-size: 1.5rem;
+    padding: 20px;
+    background: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+
+.buttons button:hover {
+    background: #ddd;
+}
